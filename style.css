@@ -1,0 +1,485 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url(file:///Users/rae/Downloads/Paper%20Texture%20BG.png);
+    color: #EBE6E280;
+    height: 100vh;
+    width: 100vw;
+}
+
+.logo {
+    display: inline-block;
+    padding-left: 40px;
+}
+
+h1 {
+    font-family: ohm-bold, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    color: #EBE6E2;
+}
+
+.filter{
+    color: #EBE6E2;
+    font-family: 'Avenir', Helvetica, sans-serif;
+    line-height: 37px;
+    font-weight: lighter;
+    font-size: 18px;
+    margin-top: -605px;
+}
+
+.filter .arrow{
+    margin-left: 54px;
+    margin-bottom: -4px;
+}   
+
+.sort{
+    color: #EBE6E2;
+    font-family: 'Avenir', Helvetica, sans-serif;
+    line-height: 37px;
+    font-weight: lighter;
+    font-size: 18px;
+    margin-top: -8px;
+}
+
+.sort .arrow{
+    margin-left: 67px;
+    margin-bottom: -4px;
+}   
+
+.explore {
+    font-family: 'Avenir', Helvetica, sans-serif;
+    line-height: 37px;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.all {
+    color: #EBE6E2;
+}
+
+
+.impact {
+    font-family: 'Avenir', Helvetica, sans-serif;
+    line-height: 40px;
+    font-weight: lighter;
+    font-size: 18px;
+    padding-top: 4px;
+}
+
+.resources {
+    font-family: 'Avenir', Helvetica, sans-serif;
+    line-height: 40px;
+    font-weight: lighter;
+    font-size: 18px;
+    padding-top: 4px;
+}
+
+.menu {
+    /* width: 100px; */
+    /* padding-left: 32px; */
+    display: inline;
+    /* margin: 0;
+    padding: 0;
+    width: 100%; */
+}
+
+
+
+.menu ul {
+    display: inline-block;
+    list-style-type: none;
+    /* overflow: hidden; */
+    /* background-color: #6E804C; */
+    font-family: 'Avenir', Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+
+.links {
+    margin-top: 36px;
+}
+
+.icons {
+    /* right: 0; */
+    float: right;
+    margin-right: 5%;
+    margin-top: 53px;
+}
+
+.menu li {
+    display: inline-block;
+    color: #EBE6E2;
+    vertical-align: super;
+
+}
+
+.menu li a {
+    color: #ebe6e280;
+    text-align: center;
+    padding: 24px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: rgb(235, 230, 226);
+}
+
+
+/* ---------- RECEIPT ONE ---------- */
+
+.tickets {
+    margin-top: -80px;
+    margin-left: 300px;
+    display: flex;
+    justify-content: left;
+    position: absolute;
+    width: 100%;
+    top: 30%;
+}
+
+.ticket-system-one {
+    max-width: 385px;
+    display: flex;
+}
+
+.ticket-system-one .top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ticket-system-one .top .printer {
+    width: 100%;
+    height: 20px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.ticket-system-one .receipts-wrapper {
+    overflow: hidden;
+    margin-top: -10px;
+    padding-bottom: 10px;
+}
+
+.ticket-system-one .receipts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    transform: translateY(-510px);
+    animation-duration: 2.5s;
+    animation-delay: 500ms;
+    animation-name: print;
+    animation-fill-mode: forwards;
+}
+
+.ticket-system-one .receipts .receipt {
+    padding: 25px 30px;
+    text-align: left;
+    min-height: 500px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px 10px 20px 20px;
+    box-shadow: 1px 3px 8px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+
+@keyframes print {
+    0% {
+        transform: translateY(-1010px);
+    }
+
+    15% {
+        transform: translateY(-810px);
+    }
+
+    35% {
+        transform: translateY(-595px);
+    }
+
+    55% {
+        transform: translateY(-310px);
+    }
+
+    70% {
+        transform: translateY(-140px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+input {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: normal;
+    margin: 0;
+}
+
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+/* ---------- RECEIPT TWO ---------- */
+
+.ticket-system-two {
+    max-width: 385px;
+    margin-left: 16px;
+    display: flex;
+}
+
+.ticket-system-two .top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ticket-system-two .top .printer {
+    width: 100%;
+    height: 20px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.ticket-system-two .receipts-wrapper {
+    overflow: hidden;
+    margin-top: -10px;
+    padding-bottom: 10px;
+}
+
+.ticket-system-two .receipts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-510px);
+    animation-duration: 2.5s;
+    animation-delay: 500ms;
+    animation-name: print;
+    animation-fill-mode: forwards;
+}
+
+.ticket-system-two .receipts .receipt {
+    padding: 25px 30px;
+    text-align: left;
+    min-height: 500px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px 10px 20px 20px;
+    box-shadow: 1px 3px 8px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+
+@keyframes print {
+    0% {
+        transform: translateY(-1010px);
+    }
+
+    15% {
+        transform: translateY(-810px);
+    }
+
+    35% {
+        transform: translateY(-595px);
+    }
+
+    55% {
+        transform: translateY(-310px);
+    }
+
+    70% {
+        transform: translateY(-140px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+input {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: normal;
+    margin: 0;
+}
+
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* ---------- RECEIPT THREE ---------- */
+
+.ticket-system-three {
+    margin-left: 16px;
+    max-width: 385px;
+    display: flex;
+}
+
+.ticket-system-three .top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ticket-system-three .top .printer {
+    width: 100%;
+    height: 20px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+.ticket-system-three .receipts-wrapper {
+    overflow: hidden;
+    margin-top: -10px;
+    padding-bottom: 10px;
+}
+
+.ticket-system-three .receipts {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-510px);
+    animation-duration: 2.5s;
+    animation-delay: 500ms;
+    animation-name: print;
+    animation-fill-mode: forwards;
+}
+
+.ticket-system-three .receipts .receipt {
+    padding: 25px 30px;
+    text-align: left;
+    min-height: 500px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px 10px 20px 20px;
+    box-shadow: 1px 3px 8px 3px rgba(0, 0, 0, 0.2);
+}
+
+
+
+@keyframes print {
+    0% {
+        transform: translateY(-1010px);
+    }
+
+    15% {
+        transform: translateY(-810px);
+    }
+
+    35% {
+        transform: translateY(-595px);
+    }
+
+    55% {
+        transform: translateY(-310px);
+    }
+
+    70% {
+        transform: translateY(-140px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+input {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: normal;
+    margin: 0;
+}
+
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* ---------- STICKY NOTE ---------- */
+
+.paperwrapper{
+  display:inline-block;
+  vertical-align:middle;
+  filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.2));
+  margin-top: 100px;
+  margin-left: 1100px;
+    
+}
+.paper{
+    height:300px;
+    width:300px;
+    max-height:300px;
+    max-width:300px;
+    position: relative;
+    border-radius:20px;
+    background-color:rgb(238, 242, 126);
+    /*box-shadow:1px 1px 12px rgba(0,0,0,0.5);*/
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:40px;
+    padding-bottom:20px;
+    
+}
+.textwrapper{
+    background: repeating-linear-gradient(
+        0deg,
+          rgba(0,0,255,0.3),
+          rgb(238, 242, 126) 1px,
+          rgb(238, 242, 126) 20px
+    );
+    height:100%;
+    width:100%;
+    border-bottom: 1px solid rgba(255,0,0,0.3);
+    border-top: 1px solid rgba(255,0,0,0.3);
+}
+textarea{
+    height:100%;
+    padding: 0px;
+    margin:0px;
+    margin-left:10px;
+    margin-right:10px;
+    background: transparent;
+    border:none;
+    line-height: 20px;
+    font-size:14px;
+    width:calc(100% - 20px);
+    outline:0;
+    resize:none;
+    font-family: monospace;
+    color:rgba(0,0,0,0.5);
+}
+#pagination{
+    position: absolute;
+    bottom:5px;
+    font-size:10px;
+    right:20px;
+}
+
+
